@@ -1,0 +1,8 @@
+<h1>Django File Uploading</h1>
+<ul>
+  {% for post in object_list %}
+  <h3>
+    <a href="{{ post.cover.url}}">{{ post.title }}</a><br/>
+  </h3>
+  {% endfor %}
+</ul>

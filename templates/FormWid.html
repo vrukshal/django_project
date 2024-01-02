@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Form Widget</title>
+</head>
+<body>
+    <h1>Form Widget:</h1>
+    <form method="POST" > 
+        <!-- <form method="POST" class="post-form" novalidate> -->
+            {% csrf_token %}  
+            {{ form.as_p }}  
+            <button type="submit" >Save</button>  
+    </form> 
+</body>
+</html>
